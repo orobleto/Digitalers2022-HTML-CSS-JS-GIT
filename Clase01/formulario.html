@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/button.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="color:green">Mi primera Pagina WEB</h1>
+        <p>Esta es mi primera pagina en Digitalers - Formulario</p>
+        <img src="https://static.educacionit.com/educacionit/assets/imagotype-it-fill-v2-color.svg">
+
+    </header>
+    <nav>
+        <a href="usuarios.html">Usuarios</a>
+        <a href="productos.html">Productos</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="tabla.html">Tabla</a>
+        <a style="float: right;" href="index.html">Inicio</a>
+    </nav>
+    <section class="layout">
+        <div class="sidebar">
+            <label>Busqueda</label>
+            <br>
+            <input type="text">
+
+        </div>
+        <div class="body">
+            <form action="#">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo" name="correo">
+                <label for="activo">Activo: </label>
+                <select name="activo" id="">
+                    <option value="true">Si</option>
+                    <option value="false">No</option>
+                </select>
+                <label for="foto">Foto: </label>
+                <input type="file" name="foto">
+                <!--
+                <input type="hidden" name="id_user" value="1"><br>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <input type="email" placeholder="tu correo"><br>
+                <input type="password" name="clave"><br>
+                <input type="radio" name="radio"><br>
+                <input type="range" name="rango"><br>
+
+                <select name="activo" id="">
+                    <option value="true">Activo</option>
+                    <option value="false">Inactivo</option>
+                </select>
+                <br>
+
+                <textarea name="direccion" cols="30" rows="20">
+                </textarea>
+                <br>
+                <input list="navegadores">
+                <datalist id="navegadores">
+                    <option value="IE">
+                    <option value="EDGE">
+                    <option value="FIREFOX">
+                    <option value="CHROME">
+                    <option value="SAFARI">
+
+                </datalist>
+                <br>
+
+                <input type="date">        <br>
+                <input type="datetime-local">        <br>
+                <input type="time">        <br>
+                <input type="week">        <br>
+                <input type="color">        <br>
+                <input type="number">        <br>
+                <input type="url">        <br>
+                <input type="file" name="foto">        <br>
+            -->
+                <div>
+                    <button type="submit" class="button success">Enviar</button>
+                    <button type="reset" class="button warning">Limpiar</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados Educacion IT - Telecom - Digitalers</p>
+    </footer>
+</body>
+
+</html>

@@ -5,29 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
     <title>Pagina de Incio - Telecom</title>
+    <!--CSS INTERNO-->
+    <style>
+        /*SELECTOR */
+        /*GENERAL*/
+        * {
+            box-sizing: border-box;
+        }
+
+        /* ETIQUETA*/
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #C3DEE5;
+            padding: 10px;
+        }
+
+        /* IDENTIFICADOR*/
+        #miHeader {
+            padding: 50px;
+            text-align: center;
+            background: white;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        /*CLASES*/
+        .menu {
+            overflow: hidden;
+            background-color: #183A44;
+        }
+
+        .menu a {
+            text-decoration: none;
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            display: block;
+            cursor: help;
+
+        }
+
+        section {
+            margin: 10px;
+        }
+
+        article {
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+            background-color: white;
+            margin-top: 10px;
+        }
+
+        .layout {
+            width: 80%;
+            height: 50%;
+
+            display: grid;
+            grid:
+                "sidebar body" 1fr / auto 1fr;
+            gap: 8px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .body {
+            grid-area: body;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #183A44;
+        }
+
+        a:active{
+            color: palevioletred;
+        }
+    </style>
+
 </head>
 
 <body>
-    <header>
-        <h1 style="color:blueviolet">Mi primera Pagina WEB</h1>
+    <header id="miHeader">
+        <!-- CSS EN LINEA-->
+        <h1 style="color: blue;">Mi primera Pagina WEB</h1>
         <p>Esta es mi primera pagina en Digitalers - Inicio</p>
+        <img src="https://static.educacionit.com/educacionit/assets/imagotype-it-fill-v2-color.svg">
     </header>
     <nav>
         <a href="usuarios.html">Usuarios</a>
         <a href="productos.html">Productos</a>
-        <a href="index.html">Inicio</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="tabla.html">Tabla</a>
+        <a style="float: right;" href="index.html">Inicio</a>
     </nav>
-    <section>
-        <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime provident itaque distinctio, magnam,
-            aspernatur in iste incidunt facere fugit suscipit officiis quibusdam nam dolores at temporibus placeat?
-            Soluta, sunt explicabo.</article>
-        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio optio quos commodi labore est laudantium
-            vitae dignissimos consequuntur, laborum a tempore? Vitae aliquid sapiente illum sunt modi accusantium error
-            doloremque.</article>
-        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rem modi, similique natus reiciendis
-            blanditiis fugit vitae, incidunt neque tempore aut dicta repellat perspiciatis quos pariatur magni dolor
-            repudiandae sunt.</article>
+    <section class="layout">
+        <div class="sidebar">
+            <label>Busqueda</label>
+            <br>
+            <input type="text">
+
+        </div>
+        <div class="body">
+
+            <article>
+                <h1>Inicio</h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime provident itaque distinctio, magnam,
+                aspernatur in iste incidunt facere fugit suscipit officiis quibusdam nam dolores at temporibus placeat?
+                Soluta, sunt explicabo.
+            </article>
+
+        </div>
     </section>
     <footer>
         <p>Todos los derechos reservados Educacion IT - Telecom - Digitalers</p>

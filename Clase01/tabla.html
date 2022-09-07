@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/button.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="color:green">Mi primera Pagina WEB</h1>
+        <p>Esta es mi primera pagina en Digitalers - Formulario</p>
+        <img src="https://static.educacionit.com/educacionit/assets/imagotype-it-fill-v2-color.svg">
+
+    </header>
+    <nav>
+        <a href="usuarios.html">Usuarios</a>
+        <a href="productos.html">Productos</a>
+        <a href="formulario.html">Formulario</a>
+        <a href="tabla.html">Tabla</a>
+        <a style="float: right;" href="index.html">Inicio</a>
+    </nav>
+    <section class="layout">
+        <div class="sidebar">
+            <label>Busqueda</label>
+            <br>
+            <input type="text">
+
+        </div>
+        <div class="body">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Documento</th>
+                        <th>Fecha Nacimiento</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Octavio</td>
+                        <td>Robleto</td>
+                        <td>95000000</td>
+                        <td>1983-03-15</td>
+                        <td><a href="#editar?id=1" class="button success">+</a></td>
+                        <td><a href="#eliminar?id=1" class="button danger">-</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Malena</td>
+                        <td>Montenegro</td>
+                        <td>95000001</td>
+                        <td>2000-03-15</td>
+                        <td><a href="#editar?id=2" class="button success">+</a></td>
+                        <td><a href="#eliminar?id=2" class="button danger">-</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ivanna</td>
+                        <td>villalba</td>
+                        <td>95000003</td>
+                        <td>2001-03-15</td>
+                        <td><a href="#editar?id=3" class="button success">+</a></td>
+                        <td><a href="#eliminar?id=3" class="button danger">-</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados Educacion IT - Telecom - Digitalers</p>
+    </footer>
+</body>
+
+</html>
